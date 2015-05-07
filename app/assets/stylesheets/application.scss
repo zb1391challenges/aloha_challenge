@@ -1,0 +1,24 @@
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+
+$light-gray:  #eeeeee;
+$red-orange: #ff4e35;
+$beige: #fcfaf6;
+.wood-panel{
+  background-image: url(image_path('wood_panel.png')); 
+}
+
+form{
+  border-radius: 5px;
+  border: 1 px solid black;
+  background-color: $beige;
+  padding: 8px 16px 0 16px;
+
+  h3{
+    color: $red-orange;
+  }
+}
+
+.centered{
+  text-align: center;
+}

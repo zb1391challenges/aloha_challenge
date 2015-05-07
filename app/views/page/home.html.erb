@@ -1,0 +1,25 @@
+<div class="wood-panel">
+  <div class="row">
+    <div class="col-md-4 col-md-push-6">
+      <div>
+	<%= form_tag '/page/home' do %>
+         <div class="centered">
+	    <h3>Essentials Kit</h3>
+	    <p>Look Good, Feel Good.</p>
+	    <p><strong>$149</strong></p>
+	    <p><strong>30</strong>The Foundation</p>
+	    <p><strong>10</strong>Daily Good Greens - Original</p>
+	    <p><strong>10</strong>Daily Good Greens - Berry</p>
+	    <p><strong>10</strong>Daily Good Greens - Chocolate</p>
+	    <%= label_tag :quantity, "Quantity" %>
+	    <%= select_tag :quantity, options_for_select([1..10]) %>
+	  </div>
+	  <%= check_box_tag :subscribe, "1", true %>
+	  <%= label_tag :subscribe, "Subscribe & Save 10%" %>
+
+	  <%= submit_tag "BUY NOW" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
