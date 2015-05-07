@@ -322,7 +322,7 @@ select{
   }
 }
 
-#education-image-container{
+.img-lg{
   @media (max-width: $screen-md-max) {
     display: none;
   }

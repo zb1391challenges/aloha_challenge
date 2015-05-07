@@ -20,6 +20,7 @@ jQuery ->
     for circle in circles
       updateDiameter(circle)
 
+  updateCircles()
   window.onresize = updateCircles
 
   
