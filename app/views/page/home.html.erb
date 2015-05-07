@@ -1,24 +1,299 @@
-<div class="wood-panel">
+<%= image_tag "wood_panel.png", class: 'wood-panel' %>
+<div class="wood-panel-content">
   <div class="row">
     <div class="col-md-4 col-md-push-6">
-      <div>
-	<%= form_tag '/page/home' do %>
-         <div class="centered">
-	    <h3>Essentials Kit</h3>
-	    <p>Look Good, Feel Good.</p>
-	    <p><strong>$149</strong></p>
-	    <p><strong>30</strong>The Foundation</p>
-	    <p><strong>10</strong>Daily Good Greens - Original</p>
-	    <p><strong>10</strong>Daily Good Greens - Berry</p>
-	    <p><strong>10</strong>Daily Good Greens - Chocolate</p>
-	    <%= label_tag :quantity, "Quantity" %>
-	    <%= select_tag :quantity, options_for_select([1..10]) %>
-	  </div>
-	  <%= check_box_tag :subscribe, "1", true %>
-	  <%= label_tag :subscribe, "Subscribe & Save 10%" %>
-
-	  <%= submit_tag "BUY NOW" %>
+      <div class="clearfix">
+        <%= form_tag '/page/home' do %>
+          <div class="form-content">
+            <div class="centered">
+              <h3>Essentials Kit</h3>
+              <p>Look Good, Feel Good.</p>
+              <h4><strong>$149</strong></h4>
+            </div>
+            <table class="essentials-table">
+              <tr>
+                <td>30</td>
+                <td>The Foundation</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>DailyGood Greens - Original</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>DailyGood Greens - Berry</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>DailyGood Greens - Chocolate</td>
+              </tr>
+            </table>
+            <div class="centered">
+              <%= label_tag :quantity, "Quantity" %>
+              <%= select_tag :quantity, options_for_select([1..10]) %>
+            </div>
+            <div class="centered checkbox-container" style=>
+              <%= check_box_tag :subscribe, "1", true, class: 'regular-checkbox' %>
+              <%= label_tag :subscribe, "" %>
+              <span>Subscribe & Save 10%</span>
+              <b>?</b>
+            </div>
+          </div>
+          <%= submit_tag "BUY NOW", class: 'btn submit' %>
         <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content beige">
+  <div class="row content beige">
+    <div class="col-md-6 col-md-push-3">
+      <h1>OF THE&nbsp;<strong>ESSENSE</strong></h1>
+      <p>
+        What you want, what you need, and what you deserve: whole food nourishment.
+        <br />
+        The Foundation and Daily Good Greens work together to give you the nutrients your body craves. Look and feel amazing with the best ingredients on earth, from earth.
+      </p>
+      <table class="table">
+        <tr>
+          <td>
+            <strong>+</strong>
+            Boosts Immune System
+          </td>
+          <td>
+            <strong>+</strong>
+            Promotes Glowing Skin
+          </td>
+          <td>
+            <strong>+</strong>
+            Aids Digestion
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>+</strong>
+            Improves Mood
+          </td>
+          <td>
+            <strong>+</strong>
+            Increases Energy
+          </td>
+          <td>
+            <strong>+</strong>
+            Sharpens Cognition
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div>
+    <div class="certifications">
+      <%= image_tag "vegan_icon.png" %>
+      <span>Vegan</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "non_gmo_icon.png" %>
+      <span>Non-GMO</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "glutten_free_icon.png" %>
+      <span>Glutten-Free</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "soy_free_icon.png" %>
+      <span>Soy-Free</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "non_artificial_icon.png" %>
+      <span>Nothing</span>
+      <span>Artificial</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "organic_ingredients_icon.png" %>
+      <span>Made With Organic Ingredients</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "gmp_icon.png" %>
+      <span>FDA cGMP</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "independently_tested_icon.png" %>
+      <span>Independently Tested</span>
+    </div>
+    <div class="certifications">
+      <%= image_tag "sustainable_solutions_icon.png" %>
+      <span>Sustainable Solutions</span>
+    </div>
+  </div>
+</div>
+<div class="content red">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1>
+        <strong>Morning, Noon, Night</strong>
+        <br />
+        Feel energized, sharp, and beautiful all day, every day.
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1>EVERY&nbsp;<strong>ESSENTIALS KIT</strong>&nbsp;CONTAINS</h1>
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 160px;">
+    <div class="col-md-3 col-md-push-3">
+      <%= image_tag "raspberry_callout.png"%>
+    </div>
+    <div class="col-md-3 col-md-push-3 immunity-kit">
+      <div class="immunity-kit-header green">  
+        <p>30 PACKETS</p>
+        <h2>DAILY GOOD GREENS</h2>
+        <span>GREEN POWDERS</span>
+      </div>
+      <div class="immunity-kit-body">
+        <div class="bar original">
+          <span><strong>10</strong>&nbsp; ORIGINAL</span>
+        </div>
+        <div class="bar chocolate">
+          <span><strong>10</strong>&nbsp; ORIGINAL</span>
+        </div>
+        <div class="bar berry">
+          <span><strong>10</strong>&nbsp; ORIGINAL</span>
+        </div>
+      </div>
+      <div class="immunity-kit-footer">
+        <p>Highest-Quality Superfoods.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="facts-link">
+        <i class="glyphicon glyphicon-download-alt"></i>
+        <a href="#">Supplement Facts Label</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-3 col-md-push-3 immunity-kit">
+        <div class="immunity-kit-header orange">
+          <p>30 PACKS</p>
+          <h2>THE FOUNDATION</h2>
+          <span>DAILY NUTRIENTS</span>
+        </div>
+        <div class="immunity-kit-footer">
+          <p>Powerful nature-made nutrients.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="facts-link">
+          <i class="glyphicon glyphicon-download-alt"></i>
+          <a href="#">Supplement Facts Label</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-md-push-3">
+        <%= image_tag "nutrients_callout.png"%>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content yellow">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1>Why wait to feel great?&nbsp;<strong>BUY NOW!</strong></h1>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <h1 class="no-margin-bottom">How Do They <strong>WORK</strong></h1>
+  <p class="no-margin-bottom">Nutrient powers, combined!</p>
+  <p>Here's how they make you feel your best.</p>
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <div id="education-image-container">
+        <%= image_tag "education.png" %>
+      </div>
+      <div id="education-circles">
+        <div class="circle">
+          <h3>VITAMIN D</h3>
+          <p>Cheer up! Vitamin D aids in the release of happy-making neurotransmitters.</p>
+        </div>
+        <div class="circle">
+          <h3>FIBER</h3>
+          <p>Moving on. Keep your digestive system running efficiently day after day</p>
+        </div>
+        <div class="circle">
+          <h3>ADAPTOGENS</h3>
+          <p>Keep calm! Help your immune system by promoting cellular and healing recovery.</p>
+        </div>
+        <div class="circle">
+          <h3>MAGNESIUM</h3>
+          <p>
+            Look on the bright side. 
+            <br />
+            Vitamin A helps promot good eye health. See for yourself!
+            </p>
+        </div>
+        <div class="circle">
+          <h3>VITAMIN A</h3>
+          <p>
+            Look on the bright side. 
+            <br />
+            Vitamin A helps promot good eye health. See for yourself!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content red">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1>
+        <strong>Give Yourself a Loving Boost of Health</strong>
+        <br />
+        Arm yourself with a 30-day supply
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="content yellow">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1>Need an immunity Boost?&nbsp;<strong>BUY NOW!</strong></h1>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <h1 class="no-margin-bottom">ASK US <strong>ANYTHING!</strong></h1>
+      <p>Our support team is here to help.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag "phone_icon.png" %>
+          <dl>
+            <dt>Call Us</dt>
+            <dd>+1 888.444.3898</dd>
+            <dd>Mon-Fri, 10 am to 7pm EST</dd>
+          </dl>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag "email_icon.png" %>
+          <dl>
+            <dt>Email Us</dt>
+            <dd>care@aloha.com</dd>
+            <dd>Anytime!</dd>
+          </dl>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag "message_icon.png" %>
+          <dl>
+            <dt>Live Chat Us</dt>
+            <dd>Mon-Fri</dd>
+            <dd>10 am to 7 pm EST</dd>
+          </dl>
+        </div>
       </div>
     </div>
   </div>
