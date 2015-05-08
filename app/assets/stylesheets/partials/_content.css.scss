@@ -1,0 +1,153 @@
+
+.content{
+  h1{
+    color: $red;
+    font-size: 32px;
+    margin: 60px 0 20px;
+  }
+  p{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  dl{
+    dt{
+      color: $red-orange;
+      font-weight: normal;
+      font-size: 32px;
+    }
+    dd{
+      color: $mustard-yellow;
+      font-size: 18px;
+    }
+  }
+  table.table{
+    tr{
+      td{
+        border-color: transparent;
+      }
+    }
+    text-align: left;
+    font-size: 18px;
+    margin: auto;
+    color: $red;
+    margin-bottom: 40px;
+  }
+  background-color: white;
+  text-align: center;
+  &.beige{
+    margin-bottom: 20px;
+    background-color: $beige;
+    h1{
+      margin-top: 0;
+      color: $red;
+    }
+  }
+  &.red{
+    background-color: $red;
+    padding-bottom: 60px;
+    background-color: $red;
+    h1{
+      color: white;
+    }
+  }
+  &.yellow{
+    background-color: $yellow;
+    padding: 40px 0;
+    h1{
+      margin: 0;
+      color: white;
+    }
+  }
+}
+
+.immunity-kit{
+  a{
+    font-size: 18px;
+    color: $orange;
+    text-decoration: underline;
+    &:hover{
+      color: lighten($orange, 5%);
+    }
+  }
+  p{
+    margin-bottom: 0;
+  }
+  h2{
+    margin: 0;
+  }
+  p:first-child{
+    margin-top: 20px;
+  }
+  span{
+    display: block;
+  }
+  .immunity-kit-header{
+    margin-bottom: 20px;
+
+    &.green{
+      p,h2{
+        color: $green;
+      }
+    }
+
+    &.orange{
+      p,h2{
+        color: $orange;
+      }
+    }
+  }
+  .immunity-kit-body{
+    margin-bottom: 10px;
+  }
+  .facts-link{
+    padding: 30px 0;
+    i{
+      color: black;
+    }
+  }
+}
+
+.essence-promotions{
+  text-align: left;
+  font-size: 18px;
+  margin: auto;
+  color: $red;
+  margin-bottom: 40px;
+}
+
+.certifications{
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  img{
+  	margin: auto;
+  	width: 60px;
+    display: block;
+  }
+  span{
+    color: $dark-green;
+    font-size: 12px;
+    display: block;
+  }
+}
+
+.bar{
+  display: inline-block;
+  color: white;
+  padding: 2px 10px;
+  &.original{
+    border: 1px solid $green;
+    background-color: $green;
+
+  }
+  &.chocolate{
+    border: 1px solid $dark-brown;
+    background-color: $dark-brown;
+  }
+  &.berry{
+    border: 1px solid $berry;
+    background-color: $berry;
+  }
+}
