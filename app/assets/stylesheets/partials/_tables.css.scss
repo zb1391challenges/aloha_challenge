@@ -1,0 +1,30 @@
+.essentials-table{
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  td{
+    padding-right: 5px;
+    padding-bottom: 2px;
+  }
+  
+
+  td:first-child{
+    font-weight: bold;
+  }
+};
+
+.regular-checkbox {
+	display: none;
+}
+
+
+tr{
+  border: none;
+  border-color: transparent;
+}
+td{
+  border: none;
+  border-color: transparent;
+}
+
+$table-border-color: transparent;
