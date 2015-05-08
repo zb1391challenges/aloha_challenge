@@ -25,6 +25,7 @@ $dark-brown: #894e3a;
 $orange: #ff6525;
 $yellow: #fbbe14;
 $mustard-yellow: #ccae67;
+
 body{
   color: $brown;
 }
@@ -56,6 +57,15 @@ label{
   top: 150px;
   left: 0;
   right:0;
+  @media (max-width: $screen-md-max) {
+    position: static;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid $beige;
+    border-bottom: none;
+    background-image: url(image_path('wood_panel.png'));
+  }
 }
 
 .form-content{
@@ -80,6 +90,9 @@ label{
 }
 
 form{
+  @media (max-width: $screen-md-max) {
+    width: 100%;
+  }
   width: 90%;
 }
 input.submit{
