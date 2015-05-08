@@ -32,7 +32,7 @@
               <%= label_tag :quantity, "Quantity" %>
               <%= select_tag :quantity, options_for_select([1..10]) %>
             </div>
-            <div class="centered checkbox-container" style=>
+            <div class="centered checkbox-container">
               <%= check_box_tag :subscribe, "1", true, class: 'regular-checkbox' %>
               <%= label_tag :subscribe, "" %>
               <span>Subscribe & Save 10%</span>
@@ -45,7 +45,7 @@
     </div>
   </div>
 </div>
-<div class="content beige">
+<div class="content beige container-fluid">
   <div class="row content beige">
     <div class="col-md-6 col-md-push-3">
       <h1>OF THE&nbsp;<strong>ESSENSE</strong></h1>
@@ -54,36 +54,32 @@
         <br />
         The Foundation and Daily Good Greens work together to give you the nutrients your body craves. Look and feel amazing with the best ingredients on earth, from earth.
       </p>
-      <table class="table">
-        <tr>
-          <td>
+      <div class="row essence-promotions">
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
             Boosts Immune System
-          </td>
-          <td>
+        </div>
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
             Promotes Glowing Skin
-          </td>
-          <td>
+        </div>
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
             Aids Digestion
-          </td>
-        </tr>
-        <tr>
-          <td>
+        </div>
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
             Improves Mood
-          </td>
-          <td>
+        </div>
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
-            Increases Energy
-          </td>
-          <td>
+            Increases Engergy
+        </div>
+        <div class="col-lg-4 col-md-6">
             <strong>+</strong>
             Sharpens Cognition
-          </td>
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
   </div>
   <div>
@@ -143,7 +139,7 @@
       <h1>EVERY&nbsp;<strong>ESSENTIALS KIT</strong>&nbsp;CONTAINS</h1>
     </div>
   </div>
-  <div class="row" style="margin-bottom: 160px;">
+  <div class="row lg-margin-bottom">
     <div class="col-md-3 col-md-push-3">
       <%= image_tag "raspberry_callout.png"%>
     </div>
@@ -275,7 +271,7 @@
           <dl>
             <dt>Call Us</dt>
             <dd>+1 888.444.3898</dd>
-            <dd>Mon-Fri, 10 am to 7pm EST</dd>
+            <dd>Mon-Fri, 10 am to 7 pm EST</dd>
           </dl>
         </div>
         <div class="col-md-4">

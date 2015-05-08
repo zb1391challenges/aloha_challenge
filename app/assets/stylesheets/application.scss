@@ -299,11 +299,20 @@ select{
   }
 }
 
+.essence-promotions{
+  text-align: left;
+  font-size: 18px;
+  margin: auto;
+  color: $red;
+  margin-bottom: 40px;
+}
+
 .certifications{
   display: inline-block;
   vertical-align: top;
   width: 120px;
   padding: 0 20px;
+  margin-bottom: 10px;
   img{
   	margin: auto;
   	width: 60px;
@@ -339,6 +348,13 @@ select{
   @media (max-width: $screen-md-max) {
     display: none;
   }
+}
+
+.lg-margin-bottom{
+  margin-bottom: 160px;
+  @media(max-width: $screen-md-max){
+    margin-bottom: 20px;
+  } 
 }
 #education-circles{
   display: none;
