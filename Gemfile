@@ -27,7 +27,7 @@ gem 'spring',        group: :development
 
 
 gem 'bootstrap-sass', '~> 3.3.4'
-gem 'autoprefixer-rails'
+#gem 'autoprefixer-rails'
 
 gem 'rails_12factor', group: :production
 
